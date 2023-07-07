@@ -6,12 +6,6 @@ export type AccountDocument = Account & Document;
 @Schema({versionKey: false})
 export class Account {
 	@Prop()
-	firstname: string;
-
-	@Prop()
-	lastname: string;
-
-	@Prop()
 	username: string;
 
 	@Prop()
