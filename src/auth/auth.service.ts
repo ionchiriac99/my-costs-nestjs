@@ -63,7 +63,7 @@ export class AuthService {
 			tap((account) => {
 				if (account === null) {
 					throw new UnauthorizedException({
-						message: 'Invalid username',
+						message: 'Incorrect username',
 					});
 				}
 			}),

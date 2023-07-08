@@ -8,7 +8,7 @@ import {AuthGuard} from '../guards/auth.guard';
 import {IAccount} from '../interfaces/account';
 import {User} from '../decorators/user.decorator';
 
-@Controller('auth')
+@Controller('api/auth')
 export class AuthController {
 	constructor(private readonly authService: AuthService) {}
 
