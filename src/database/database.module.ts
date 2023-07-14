@@ -3,12 +3,12 @@ import {MongooseModule} from '@nestjs/mongoose';
 import {Token, TokenSchema} from '../auth/token/token.schema';
 import {Account, AccountSchema} from '../auth/account.schema';
 import {Transaction, TransactionSchema} from '../transaction/transaction.schema';
-
-const connectionString = 'mongodb://127.0.0.1:27017/my-transactions';
+import {ConfigModule} from '@nestjs/config';
 
 @Module({
 	imports: [
-		MongooseModule.forRoot(connectionString),
+		ConfigModule.forRoot(),
+		MongooseModule.forRoot(process.env.DB_CONNECTION),
 		MongooseModule.forFeature([
 			{
 				name: Account.name,

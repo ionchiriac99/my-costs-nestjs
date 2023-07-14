@@ -6,7 +6,7 @@ import {TransactionDto} from './transaction.dto';
 import {User} from '../decorators/user.decorator';
 import {ITransaction} from '../interfaces/transaction';
 
-@Controller('transaction')
+@Controller('api/transaction')
 export class TransactionController {
 	constructor(private readonly transactionService: TransactionService) {}
 
