@@ -8,7 +8,6 @@ export class TransactionDto {
 	@IsNotEmpty()
 	@MinLength(3)
 	@MaxLength(256)
-	@Matches(/^([0-9a-zA-Z\-_])+$/)
 	text: string;
 
 	@IsNotEmpty()
