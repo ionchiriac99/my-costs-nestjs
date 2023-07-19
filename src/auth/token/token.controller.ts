@@ -2,7 +2,7 @@ import {Controller, Headers, Get} from '@nestjs/common';
 import {TokenService} from './token.service';
 import {Observable} from 'rxjs';
 
-@Controller()
+@Controller('/api/token')
 export class TokenController {
 	constructor(private readonly tokenService: TokenService) {}
 

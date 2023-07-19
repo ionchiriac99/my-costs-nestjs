@@ -3,7 +3,7 @@ import {InjectModel} from '@nestjs/mongoose';
 import {Token, TokenDocument} from './token.schema';
 import {Model, Types} from 'mongoose';
 import {JwtService} from './jwt.service';
-import {Observable, catchError, from, map, mergeMap, tap} from 'rxjs';
+import {Observable, catchError, from, map, mergeMap} from 'rxjs';
 import {TokenDto} from './token.dto';
 
 @Injectable()
